@@ -55,3 +55,21 @@ insert into Hindi_Movie_Info (mid, name, rdate, dur, lang) values
 
 select * from Hindi_Movie_Info;
 
+DELETE FROM Hindi_Movie_Info
+WHERE genre = 'Drama' AND dur > '2:10:00';
+
+
+DELETE FROM Hindi_Movie_Info
+WHERE rdate < '2015-01-01' AND rate > 8.0;
+
+
+DELETE FROM Hindi_Movie_Info
+WHERE rate < 7.8 OR dir = 'Shoojit';
+
+DELETE FROM Hindi_Movie_Info
+WHERE actress = 'Deepika' OR music = 'Pritam';
+
+
+
+
+

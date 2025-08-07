@@ -33,6 +33,7 @@ insert into Telugu_Movies_Info values
 (6, 'Jersey', '2019-04-19', '2:40:00', 'Sports', 'Telugu', 8.5, 'Nani', 'Shraddha', 'Gowtam', 'Sithara', 'Anirudh', 'Sanu', 20000000, 485000000);
 insert into Telugu_Movies_Info values
 (7, 'Goodachari', '2018-08-03', '2:27:00', 'Spy', 'Telugu', 7.9, 'Adivi', 'Sobhita', 'Sashi', 'Abhishek', 'Sricharan', 'Shaneil', 6000000, 260000000);
+(8, 'Goodachari2', '2020-08-03', '2:29:00', 'Spy', 'Telugu', 7.9, 'Adivi', 'Sobhita', 'Sashi', 'Abhishek', 'Sricharan', 'Shaneil', 7000000, 360000000);
 
 
 
@@ -48,9 +49,52 @@ insert into Telugu_Movies_Info (mid, name, rdate, dur, lang) values
 (12, 'HIT', '2020-02-28', '2:05:00', 'Telugu');
 insert into Telugu_Movies_Info (mid, name, rdate, dur, lang) values
 (13, 'Virata', '2022-06-17', '2:31:00', 'Telugu');
-insert into Telugu_Movies_Info (mid, name, rdate, dur, lang) values
+  insert into Telugu_Movies_Info (mid, name, rdate, dur, lang) values
 (14, 'Oopiri', '2016-03-25', '2:38:00', 'Telugu');
 insert into Telugu_Movies_Info (mid, name, rdate, dur, lang) values
-(15, 'Uppena', '2021-02-12', '2:27:00', 'Telugu');
+(20, 'Uppena0', '2020-02-12', '2:28:00', 'Telugu'),
+(16, 'Uppena2', '2022-02-12', '2:28:00', 'Telugu'),
+(17, 'Uppena3', '2023-02-12', '2:29:00', 'Telugu'),
+(18, 'Uppena4', '2024-02-12', '2:30:00', 'Telugu'),
+(19, 'Uppena5', '2025-02-12', '2:31:00', 'Telugu');
 
-select * from Telugu_Movies_Info;
+delete 
+delete from tableName;
+delete tableName where col=value;
+
+
+delete from Telugu_Movies_Info where name = 'Baahubali';
+
+SELECT * FROM indian_movies.telugu_movies_info;
+
+cosider 2 columns movie and language for 2 operations
+
+
+DELETE FROM Telugu_Movies_Info
+WHERE rate < 8.0 AND budget < 10000000;
+
+DELETE FROM Telugu_Movies_Info
+ WHERE dir = 'Rajamouli' AND camera = 'Senthil';
+
+
+ DELETE FROM Telugu_Movies_Info
+WHERE actor = 'Nani' OR actress = 'Sobhita';
+
+
+DELETE FROM Telugu_Movies_Info
+ WHERE rate > 8.3 OR music = 'Anirudh';
+
+
+
+update Telugu_Movies_Info set col1=newVal, col2=newVal,col3=newVal where[conditions];
+update Telugu_Movies_Info set col1=newVal, col2=newVal,col3=newVal ;
+
+update Telugu_Movies_Info set lang='kannada', actor='prajwal',name='arjun reddy' ;
+update telugu_movies_info set lang='kannada', actor='Prajwal' where name='Arjun Reddy';
+
+select * from telugu_movies_info;
+
+
+
+
+

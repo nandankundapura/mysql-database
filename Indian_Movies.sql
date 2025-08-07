@@ -56,3 +56,21 @@ insert into Kannada_Movie_Names (mid, name, rdate, dur, lang) values
 select * from Kannada_Movie_Names;
 
 
+
+DELETE FROM Kannada_Movie_Names
+WHERE name = 'Kantara' AND lang = 'Kannada';
+ 
+ select * from Kannada_Movie_Names;
+ 
+ 
+ DELETE FROM Kannada_Movie_Names
+WHERE lang = 'Kannada' AND dur > '2:30:00';
+
+DELETE FROM Kannada_Movie_Names
+WHERE name = 'Lucia' OR lang = 'Telugu';
+
+DELETE FROM Kannada_Movie_Names
+WHERE rating < 8.2 OR actor = 'Rakshit';
+
+
+
