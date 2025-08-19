@@ -11,7 +11,8 @@ create table courses (
     is_active boolean default true,
     faculty_name varchar(50),
     start_date date,
-    end_date date
+    end_date date,
+     CHECK (start_date != end_date)
 );
 
 insert into courses values
